@@ -1,38 +1,44 @@
+name: toolbox_app
+description: "Aplicación de herramientas"
+publish_to: 'none'
 
-  name: toolbox_app
-  description: "Aplicación de herramientas"
-  publish_to: 'none'
+version: 1.0.0+1
 
-  version: 1.0.0+1
+environment:
+  sdk: ^3.12.2
 
-  environment:
-    sdk: ^3.12.2
-
-  dependencies:
-    flutter:
-      sdk: flutter
-
-    cupertino_icons: ^1.0.8
-
-    # Consumir APIs
-    http: ^1.2.2
-
-    # Abrir enlaces web
-    url_launcher: ^6.3.0
-
-    # Reproducir sonido del Pokémon
-    audioplayers: ^6.0.0
-
-  dev_dependencies:
-    flutter_test:
-      sdk: flutter
-
-    flutter_lints: ^6.0.0
-
+dependencies:
   flutter:
+    sdk: flutter
 
-    uses-material-design: true
+  cupertino_icons: ^1.0.8
 
-    assets:
-      - assets/images/
+  # Consumir APIs
+  http: ^1.2.2
 
+  # Abrir enlaces web
+  url_launcher: ^6.3.0
+
+  # Reproducir sonido del Pokémon
+  audioplayers: ^6.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+  # Generar el ícono de la aplicación
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/profile.jpeg"
